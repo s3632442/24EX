@@ -4,16 +4,16 @@
 Patient::Patient()
 {
 
-    
+    this->regNo = int();
     this->ward = Ward();
     this->Name = std::string();
     this->DOB = int();
-
 };
 
-Patient::Patient(std::string Name, int DOB, Ward c)
+Patient::Patient(std::string Name, int DOB, Ward c, int regNo)
 {
 
+    this->regNo = regNo;
     this->ward = c;
     this->Name = Name;
     this->DOB = DOB;
@@ -42,3 +42,14 @@ void Patient::printWardAndShape()
     else if (this->ward == 'P')
         std::cout << "MATERNAL";
 };
+
+void operator<<(std::string *&filename, Patient &obj)
+{
+    Patient temp;
+    std::ofstream outputFile(*filename);
+    outputFile << obj.regNo << std::endl;
+    outputFile << obj.Name << std::endl;
+    outputFile << obj.DOB << std::endl;
+
+    outputFile.close();
+}

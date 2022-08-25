@@ -93,7 +93,7 @@ void LinkedList::addFront(Patient *n)
 
 Patient *LinkedList::removeFront()
 {
-    Patient *front;
+    Patient *front = new Patient();
     if (this->head == NULL)
     {
     }
@@ -254,8 +254,7 @@ void LinkedList::removeNodeContaining(Patient *&Patient)
     }
 }
 
-// 20220801
-// https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/
+
 int LinkedList::frequency(Patient *Patient)
 {
     int count = 0;
