@@ -1,0 +1,20 @@
+
+*** Q3 PART 1 ***
+Hour: 03
+Exam Start Time: 09:00:00 (32400) 
+Exam End Time: 13:25:15 (48315) 
+Exam Duration: 04:25:15
+New Exam End Time: 14:35:15
+
+*** Q3 PART 2 ***
+time1: 11:15:35, time2: 03:12:11
+time1 > time2
+
+*** Q3 PART 3 ***
+time3: 10:06:20
+time3: 10:06:35
+
+*** Q3 PART 4 ***
+time3: 10:06:35
+time3: 15:06:35
+
