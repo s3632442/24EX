@@ -8,11 +8,16 @@ int main()
 
     std::cout << a->Name << " " << a->DOB << " " << a->ward << " " << a->regNo << std::endl;
 
-    Register reg = Register();
+    // Register reg = Register();
     Node n = Node(a);
-    reg.pReg->addFront(a);
+    // reg.pReg->addFront(a);
+    PReg *pr = new PReg();
 
-    std::cout << reg.pReg->getNodeByData(*a)->getData()->getWard() << std::endl;
+    pr->addEnd(a);
+    pr->addEnd(a);
+    std::cout << pr->frequency(a) << std::endl;
+
+    // std::cout << reg.pReg->getNodeByData(*a)->getData()->getWard() << std::endl;
 
     return 0;
 }
